@@ -5,6 +5,6 @@ class PlikGlowny
     static void Main(string[] args)
     {
         Tablice tablice = new Tablice();
-        tablice.Wyswietl();
+        int[] tab = tablice.Tworzenie_tablicy();
     }
 }

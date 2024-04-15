@@ -12,5 +12,20 @@ namespace ConsoleApp1
         {
             Console.WriteLine("To jest plik z tablicami");
         }
+
+        public int[] Tworzenie_tablicy()
+        {
+            Console.WriteLine("Ile znaków ma mieć tablica?");
+            int n = int.Parse(Console.ReadLine());
+
+            int[] tablica = new int[n];
+
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write("Podaj liczbe do tablicy: ");
+                tablica[i] = int.Parse(Console.ReadLine());
+            }
+            return tablica;
+        }
     }
 }
