@@ -8,14 +8,17 @@ namespace ConsoleApp1
 {
     public class Tablice
     {
-        public void Wyswietl()
+        public void Wyswietl(int[] tab)
         {
-            Console.WriteLine("To jest plik z tablicami");
+            for (int i = 0; i < tab.Length; i++)
+            {
+                Console.Write(tab[i] + ", ");
+            }
         }
 
         public int[] Tworzenie_tablicy()
         {
-            Console.WriteLine("Ile znaków ma mieć tablica?");
+            Console.Write("Ile znaków ma mieć tablica? : ");
             int n = int.Parse(Console.ReadLine());
 
             int[] tablica = new int[n];

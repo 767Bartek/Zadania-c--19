@@ -4,7 +4,9 @@ class PlikGlowny
 {
     static void Main(string[] args)
     {
-        Tablice tablice = new Tablice();
-        int[] tab = tablice.Tworzenie_tablicy();
+        Tablice tablica = new Tablice();
+        int[] tab = tablica.Tworzenie_tablicy();
+
+        tablica.Wyswietl(tab);
     }
 }
