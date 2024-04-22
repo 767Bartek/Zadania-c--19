@@ -10,5 +10,6 @@ class PlikGlowny
         tablica.Wyswietl(tab);
         tablica.SorotowanieBombelkowe(tab);
         tablica.Wyswietl(tab);
+        tablica.Przeszukaj(tab);
     }
 }
