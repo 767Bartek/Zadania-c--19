@@ -8,5 +8,7 @@ class PlikGlowny
         int[] tab = tablica.Tworzenie_tablicy();
 
         tablica.Wyswietl(tab);
+        tablica.SorotowanieBombelkowe(tab);
+        tablica.Wyswietl(tab);
     }
 }

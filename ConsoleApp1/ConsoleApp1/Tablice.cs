@@ -14,6 +14,7 @@ namespace ConsoleApp1
             {
                 Console.Write(tab[i] + ", ");
             }
+            Console.WriteLine();
         }
 
         public int[] Tworzenie_tablicy()
@@ -30,5 +31,23 @@ namespace ConsoleApp1
             }
             return tablica;
         }
+
+        public void SorotowanieBombelkowe(int[] tab)
+        {
+            for (int i = 0; i < tab.Length; i++)
+            {
+                for (int j = 1; j < tab.Length -i; j++)
+                {
+                    if (tab[j - 1] > tab[j])
+                    {
+                        int x = tab[j-1];
+                        tab[j-1] = tab[j];
+                        tab[j] = x;
+                    }
+                }
+            }
+        }
     }
+
+    
 }
